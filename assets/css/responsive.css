@@ -227,3 +227,9 @@
         max-height: 260px;
     }
 }
+
+@media (min-width:400px){
+    .banner-left-video {
+        min-height: 180px;
+    }
+}
