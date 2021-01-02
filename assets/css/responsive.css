@@ -52,6 +52,9 @@
     .section-padding {
         padding: 50px 0px;
     }
+    .banner-title {
+        padding-bottom: 25px;
+    }
     .banner-left-video {
         height: 100%;
         min-height: 246px;
