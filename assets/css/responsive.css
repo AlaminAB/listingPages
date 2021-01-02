@@ -1,0 +1,212 @@
+
+/* ***Responsive media query*** */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width:1500px){ 
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .slider-right-img {
+        max-width: 350px;
+    }
+    .left-slider-text {
+        max-width: 330px;
+    }
+    .slider-right-img img {
+        object-fit: cover;
+    }
+    .left-slider-text h3 {
+        font-size: 28px;
+    }
+    .pagi {
+        bottom: 90px;
+    }
+    .faq-side {
+        padding-left: 0;
+        padding-top: 30px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .faq-slider-img {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    div#faqs-slider img {
+        width: 100%;
+        min-height: 100%;
+        max-width: 420px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .section-padding {
+        padding: 50px 0px;
+    }
+    .banner-left-video {
+        height: 100%;
+        min-height: 400px;
+    }
+    .request-form {
+        margin-top: 40px;
+    }
+    .platform-card {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .slider-inner {
+        display: block;
+        width: 100%;
+        max-width: 460px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .slider-wrap {
+        padding: 35px 0 0;
+        min-height: 730px;
+       
+    }
+    .pagi {
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .left-slider-text .subline {
+        padding: 12px 0 12px;
+    }
+    .left-slider-text {
+        width: 100%;
+        max-width: 100%;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    .screenshot-wrap {
+        padding-bottom: 50px;
+    }
+    .section-padding-top {
+        padding-top: 50px;
+    }
+    .screenshot {
+        max-width: 340px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .slider-txt2 .review-text {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .testimonial-wrap {
+        padding-bottom: 0;
+    }
+    div#navi2 {
+        bottom: 50px;
+    }
+    .faq-side {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    li.nav-item {
+        margin-right: 0px !important;
+    }
+    li.nav-item .nav-link {
+        font-size: 15px;
+        color: #a4b1c3;
+        text-align: center;
+        border-bottom: 1px solid #a7aaaf30;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    div#navbarNav {
+        background: #3e5574;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        position: absolute;
+        left: 0;
+        top: 78px;
+        width: 100vw;
+        z-index: 99;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    button.navbar-toggler i {
+        color: #3e5574;
+    }
+    button.navbar-toggler {
+        border: 1px solid #3e5574;
+    }
+    .topbar p {
+        font-size: 15px;
+    }
+    .section-title {
+        padding-bottom: 40px;
+    }
+    a.nav-link.active {
+        color: #ffffff !important;
+    }
+    li.nav-item .nav-link:hover {
+        color: #ffffff !important;
+    }
+    p.review-text:after {
+        left: -30px;
+    }
+    p.review-text:before {
+        right: -30px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 480.98px) { 
+    .slider-right-img {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .screenshot {
+        max-width: 290px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .slider-txt2 .review-text {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    p.review-text:after {
+        left: -25px;
+        font-size: 18px;
+
+    }
+    p.review-text:before {
+        right: -25px;
+        font-size: 18px;
+    }
+    .cta-top h2 {
+        font-size: 30px;
+    }
+    .cta-wrap {
+
+        padding: 60px 0px;
+    }
+    .faq-wrap {
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+    .left-slider-text {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .left-slider-text p {
+        line-height: 1.8;
+    }
+    .slider-right-img img {
+        min-height: 260px;
+        max-height: 260px;
+    }
+}
