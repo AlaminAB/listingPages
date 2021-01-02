@@ -1,4 +1,5 @@
 
+
 /*font-family: 'Oxygen', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 
@@ -21,8 +22,6 @@ a,
 .button,
 button {
   -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -124,7 +123,8 @@ a {
 
 /* header css start  */
 .topbar {
-  box-shadow: 0 -1px 0 rgba(0,0,0,0.2)inset;
+  -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.2)inset;
+          box-shadow: 0 -1px 0 rgba(0,0,0,0.2)inset;
   background-color: #3f5673;
   padding: 8px 0px;
 }
@@ -142,7 +142,8 @@ a {
 
 header {
   background-color: #f3f5f7;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.4)inset;
+  -webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.4)inset;
+          box-shadow: 0 -1px 0 rgba(255,255,255,0.4)inset;
   border-bottom: 8px solid #d3dbe7;
   padding: 3px 0px;
 }
@@ -193,12 +194,25 @@ nav.navbar.navbar-expand-md {
   display: block;
   margin-bottom: 15px;
   background-color: #354960;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset, 0 1px 1px rgba(255,255,255,0.1);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset, 0 1px 1px rgba(255,255,255,0.1);
+          box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset, 0 1px 1px rgba(255,255,255,0.1);
   padding: 11px 15px;
   color: #808c9e;
   font-size: 13px;
   border: none;
   border-radius: 5px;
+}
+::-webkit-input-placeholder {
+color:#808c9e;
+}
+::-moz-placeholder {
+color:#808c9e;
+}
+:-ms-input-placeholder {
+color:#808c9e;
+}
+::-ms-input-placeholder {
+color:#808c9e;
 }
 ::placeholder {
 color:#808c9e;
@@ -227,12 +241,11 @@ color:#808c9e;
   width: 120px;
   border-radius: 5px;
   display: block;
-  background: -moz-linear-gradient(top, #3bb4ed 1%, #30a7e9 100%);
-  background: -webkit-linear-gradient(top, #3bb4ed 1%,#30a7e9 100%);
   background: -o-linear-gradient(top, #3bb4ed 1%,#30a7e9 100%);
-  background: -ms-linear-gradient(top, #3bb4ed 1%,#30a7e9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #3bb4ed),to(#30a7e9));
   background: linear-gradient(to bottom, #3bb4ed 1%,#30a7e9 100%);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0px 1px rgba(255, 255, 255, 0.9) inset, 0 4px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0px 1px rgba(255, 255, 255, 0.9) inset, 0 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0px 1px rgba(255, 255, 255, 0.9) inset, 0 4px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
   border: none;
   margin-top: 18px;
@@ -241,9 +254,13 @@ color:#808c9e;
   right: 20px;
 }
 .request-form form button:hover{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgb(48, 167, 233)), to(rgb(59, 180, 237))) !important;
+    background: -o-linear-gradient(rgb(48, 167, 233) 1%, rgb(59, 180, 237) 100%) !important;
     background: linear-gradient(rgb(48, 167, 233) 1%, rgb(59, 180, 237) 100%) !important;
 }
 .curve-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -303,7 +320,9 @@ color:#808c9e;
   height: 24px;
   left: 50%;
   top: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-repeat: no-repeat;
 }
 .platform-icon {
@@ -338,14 +357,19 @@ color:#808c9e;
 
 /* slider section start  */
 .slider-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 
 .slider-right-img img {
   border-radius: 4px 4px 4px 4px;
-  box-shadow: 0px 0px 12px #333;
+  -webkit-box-shadow: 0px 0px 12px #333;
+          box-shadow: 0px 0px 12px #333;
   width: 100%;
   height: 100%;
   min-height: 323px;
@@ -415,6 +439,8 @@ div#navi a {
 }
 
 div#navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 a.activeSlide {
@@ -430,7 +456,8 @@ a.activeSlide {
   border-radius: 5px;
   overflow: hidden;
   border: 4px solid #3e5574;
-  box-shadow: rgb(153, 153, 153) 0px 0px 10px;
+  -webkit-box-shadow: rgb(153, 153, 153) 0px 0px 10px;
+          box-shadow: rgb(153, 153, 153) 0px 0px 10px;
 }
 .screenshot-wrap {
   padding-bottom: 65px;
@@ -507,8 +534,12 @@ div#navi2 a {
 }
 
 div#navi2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   bottom: -8px;
 }
@@ -560,7 +591,8 @@ div#faqs-slider img {
 /* CTA section start  */
 .cta-wrap {
   background: #3f5673;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.05)inset;
+  -webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.05)inset;
+          box-shadow: 0 -1px 0 rgba(255,255,255,0.05)inset;
   padding: 90px 0px;
 }
 
@@ -585,8 +617,11 @@ div#faqs-slider img {
   font-size: 14px;
   color: rgb(255, 255, 255);
   border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgb(59, 180, 237)), to(rgb(48, 167, 233)));
+  background: -o-linear-gradient(rgb(59, 180, 237) 1%, rgb(48, 167, 233) 100%);
   background: linear-gradient(rgb(59, 180, 237) 1%, rgb(48, 167, 233) 100%);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(255, 255, 255, 0.9) 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 4px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(255, 255, 255, 0.9) 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 4px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(255, 255, 255, 0.9) 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 4px 0px;
   text-align: center;
   display: inline-block;
   padding: 15px 35px;
@@ -603,6 +638,8 @@ div#faqs-slider img {
   padding: 2px 3px 0px 0px;
 }
 .cta-top a:hover{
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgb(48, 167, 233)), to(rgb(59, 180, 237))) !important;
+   background: -o-linear-gradient(rgb(48, 167, 233) 1%, rgb(59, 180, 237) 100%) !important;
    background: linear-gradient(rgb(48, 167, 233) 1%, rgb(59, 180, 237) 100%) !important;
 }
 
@@ -611,7 +648,8 @@ div#faqs-slider img {
 /* copyright  */
 footer {
   background-color: rgb(53, 73, 96);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px inset;
   padding: 20px 0px;
 }
 
